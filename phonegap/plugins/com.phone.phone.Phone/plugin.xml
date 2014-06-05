@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="com.phone.phone.Phone"
+        version="1.5.2">
+
+    <name>Phone</name>
+    <description>Phone for cordova plugin</description>
+    <author>Phone</author>
+    <keywords>Phone</keywords>
+    <license>Apache 2.0 License</license>
+
+    <engines>
+        <engine name="cordova" version=">=3.0"/>
+    </engines>
+
+    <!-- android -->
+    <platform name="android">
+
+        <js-module src="www/phone.js" name="phone">
+            <clobbers target="window.plugins.Phone"/>
+        </js-module>
+
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="PhonePlugin">
+                <param name="android-package" value="com.phone.phone.PhonePlugin"/>
+            </feature>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.CALL_PHONE" />
+            <uses-permission android:name="android.permission.READ_CALL_LOG" />
+            <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+        </config-file>
+
+        <source-file src="src/android/PhonePlugin.java" target-dir="src/com/phone/phone"/>
+        <source-file src="src/android/PhoneResult.java" target-dir="src/com/phone/phone"/>
+    </platform>
+
+</plugin>

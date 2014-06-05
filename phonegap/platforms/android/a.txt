@@ -1,0 +1,150 @@
+Buildfile: E:\project\Sencha Touch\GeMobile\phonegap\platforms\android\build.xml
+
+-set-mode-check:
+
+-set-debug-files:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.3.0
+ [checkenv] Installed at E:\project\phonegap\android-sdk-windows
+
+-setup:
+     [echo] Project Name: android
+  [gettype] Project Type: Application
+
+-set-debug-mode:
+
+-debug-obfuscation-check:
+
+-pre-build:
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.0
+     [echo] Resolving Build Target for android...
+[gettarget] Project Target:   Android 4.4
+[gettarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+    [mkdir] Created dir: E:\project\Sencha Touch\GeMobile\phonegap\platforms\android\bin\rsObj
+    [mkdir] Created dir: E:\project\Sencha Touch\GeMobile\phonegap\platforms\android\bin\rsLibs
+     [echo] ----------
+     [echo] Resolving Dependencies for android...
+[dependency] Library dependencies:
+[dependency] 
+[dependency] ------------------
+[dependency] Ordered libraries:
+[dependency] 
+[dependency] ------------------
+     [echo] ----------
+     [echo] Building Libraries with 'debug'...
+
+nodeps:
+
+-set-mode-check:
+
+-set-debug-files:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.3.0
+ [checkenv] Installed at E:\project\phonegap\android-sdk-windows
+
+-setup:
+     [echo] Project Name: CordovaLib
+  [gettype] Project Type: Android Library
+
+-set-debug-mode:
+
+-debug-obfuscation-check:
+
+-pre-build:
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.0
+     [echo] Resolving Build Target for CordovaLib...
+[gettarget] Project Target:   Android 4.4
+[gettarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+     [echo] ----------
+     [echo] Resolving Dependencies for CordovaLib...
+[dependency] Library dependencies:
+[dependency] No Libraries
+[dependency] 
+[dependency] ------------------
+
+-code-gen:
+[mergemanifest] Found Deleted Target File
+[mergemanifest] Merging AndroidManifest files into one.
+[mergemanifest] Manifest merger disabled. Using project manifest only.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] Found new input file
+     [aapt] Generating resource IDs...
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] No need to generate new BuildConfig.
+
+-pre-compile:
+
+-compile:
+     [echo] Creating library output jar file...
+
+-post-compile:
+
+-obfuscate:
+
+-dex:
+     [echo] Library project: do not convert bytecode...
+
+-crunch:
+   [crunch] Crunching PNG Files in source dir: E:\project\Sencha Touch\GeMobile\phonegap\platforms\android\CordovaLib\res
+   [crunch] To destination dir: E:\project\Sencha Touch\GeMobile\phonegap\platforms\android\CordovaLib\bin\res
+   [crunch] Crunched 0 PNG files to update cache
+
+-package-resources:
+     [echo] Library project: do not package resources...
+
+-package:
+     [echo] Library project: do not package apk...
+
+-post-package:
+
+-do-debug:
+     [echo] Library project: do not create apk...
+[propertyfile] Updating property file: E:\project\Sencha Touch\GeMobile\phonegap\platforms\android\CordovaLib\bin\build.prop
+[propertyfile] Updating property file: E:\project\Sencha Touch\GeMobile\phonegap\platforms\android\CordovaLib\bin\build.prop
+[propertyfile] Updating property file: E:\project\Sencha Touch\GeMobile\phonegap\platforms\android\CordovaLib\bin\build.prop
+[propertyfile] Updating property file: E:\project\Sencha Touch\GeMobile\phonegap\platforms\android\CordovaLib\bin\build.prop
+
+-post-build:
+
+debug:
+
+-code-gen:
+[mergemanifest] Found Deleted Target File
+[mergemanifest] Merging AndroidManifest files into one.
+[mergemanifest] Manifest merger disabled. Using project manifest only.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] Found Deleted Target File
+     [aapt] Generating resource IDs...
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] Generating BuildConfig class.
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 4 source files to E:\project\Sencha Touch\GeMobile\phonegap\platforms\android\bin\classes
+    [javac] E:\project\Sencha Touch\GeMobile\phonegap\platforms\android\src\com\mycompany\gemobile\gemobile\.java:25: 需要 <标识符>
+    [javac] public class  extends CordovaActivity 
+    [javac]             ^
+    [javac] 1 错误
